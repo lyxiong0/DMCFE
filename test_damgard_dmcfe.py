@@ -1,11 +1,10 @@
 import logging
 from crypto.damgard_dmcfe import DamgardDMCFEServer, DamgardDMCFEClient
-from crypto.dmcfe_utils import generate_config_files, load_dlog_table_config
+from crypto.dmcfe_utils import generate_config_files, load_dlog_table_config, timer
 
 import random
 import os
 import numpy as np
-from nn.utils import timer
 import gmpy2 as gp
 
 logger = logging.getLogger(__name__)

@@ -1,13 +1,18 @@
 import random
-import zlib
-import base64
 import json
 import logging
+import time
 from datetime import datetime
 
 import gmpy2 as gp
 
 logger = logging.getLogger(__name__)
+
+def timer(ctx, logger):
+    """Helper for measuring runtime"""
+    time0 = time.perf_counter()
+    yield
+    logger.info('[%s][elapsed time: %.4f s]' % (ctx, time.perf_counter() - time0))
 
 def _random_with_seed(minimum, maximum, num, seed=None):
     '''
