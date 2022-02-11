@@ -12,5 +12,7 @@ gmpy
 
 ## Reference
 [iRxyzzz/nn-emd](https://github.com/iRxyzzz/nn-emd)
+
 [fentec-project/gofe](https://github.com/fentec-project/gofe)
+
 [Decentralized Multi-Client Functional Encryption for Inner Product](https://eprint.iacr.org/2017/989.pdf)
